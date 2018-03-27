@@ -85,7 +85,7 @@
 
                     </div>
                    
-                    <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                    <table class="table table-striped table-hover table-bordered" id="sample_editable_1" >
 
                         <thead>
 
@@ -127,13 +127,16 @@
 
                         </thead>
 
-                        <tbody>
+                        <tbody valign="middle">
                           {foreach $list as $v}
                             <tr>
                                  <td>{$v.id}</td>
                                  <td>{$v.title}</td>
                                  
-                                <td>{$v.image}</td>
+                                <td>
+                                    
+                                    <img src="__STATIC__/upload/{$v.image_file}" style="width:100px;height:100px;"></td>
+                                    
                                 
                                 <td>{$v.quantity}{$v.sku_id}</td>
                                 <td>{$v.stock_status_id}</td>
