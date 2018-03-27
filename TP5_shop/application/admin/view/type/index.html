@@ -1,0 +1,198 @@
+<!-- BEGIN PAGE -->
+
+<div class="page-content">
+
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+    <div id="portlet-config" class="modal hide">
+
+        <div class="modal-header">
+
+            <button data-dismiss="modal" class="close" type="button"></button>
+
+            <h3>portlet Settings</h3>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>Here will be a configuration form</p>
+
+        </div>
+
+    </div>
+
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+    <!-- BEGIN PAGE CONTAINER-->        
+
+    <div class="container-fluid">
+
+        <!-- BEGIN PAGE HEADER-->
+
+        <div class="row-fluid">
+
+            <div class="span12">
+
+                <!-- BEGIN STYLE CUSTOMIZER -->
+
+
+
+                <!-- END BEGIN STYLE CUSTOMIZER -->  
+
+                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+                <h3 class="page-title">
+
+                    分类管理
+
+                </h3>
+
+
+                <!-- END PAGE TITLE & BREADCRUMB-->
+
+            </div>
+
+        </div>
+
+        <!-- END PAGE HEADER-->
+
+        <!-- BEGIN PAGE CONTENT-->
+
+        <div class="row-fluid">
+
+            <div class="span12">
+
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+
+
+                <div class="portlet-body">
+
+                    <div class="clearfix">
+
+                        <div class="btn-group">
+
+                            <a href="{:url('admin/type/add')}" id="sample_editable_1_new" class="btn green">
+
+                                添加<i class="icon-plus"></i>
+
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+                    
+
+                    <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+
+                        <thead>
+
+                            <tr>
+                                <th>ID</th>
+                                 <th style="position:relative;">
+                                     用户名
+<!--                                     <div class="order">
+                                         <span class="order_desc" style="border-bottom-color:red"></span>
+                                         <span class="order_asc"></span>
+                                     </div>-->
+                                 </th>
+
+                                <th>排序</th>
+              
+
+                                <th>添加时间</th>
+
+                                <th>修改时间</th>
+
+                        
+
+                                <th>操作</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            
+                        {foreach $list as $k=>$v}
+                        <tr>
+                                 <th>{$v.id}</th>
+              
+                                 <th data-level="{$v.leve1}" class="title" data-id="{$v.id}" data-pid="{$v.pid}">{$v.name}</th>
+<!--                                <th data-level="{$v.leve1}" class="title">{$v.name}</th>-->
+
+                                <th>{$v.sort}</th>
+                                <th>{$v.create_time}</th>
+                                <th>{$v.update_time}</th>
+
+                                <th><a class="delete" href="{:url('admin/type/update',['id'=>$v['id']])}">修改</a>|<a class="delete" href="{:url('admin/type/delete',['id'=>$v['id']])}">删除</a></th>
+                        
+                        
+                        </tr>
+                        {/foreach}
+                   
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- END EXAMPLE TABLE PORTLET-->
+
+        </div>
+
+    </div>
+
+   
+    <!-- END PAGE CONTENT -->
+
+</div>
+
+<script type="text/javascript">
+    $(function(){
+       // console.log($("td[data-level!='1']"));
+        $("th[class='title'][data-level!='1']").parent().hide();
+        
+//        分类列表的隐藏显示
+//        方法一
+        $("th[class='title']").click(function(){
+            var level=$(this).data("level");
+            var id=$(this).data("id");//子集的父id
+            $("th[class='title'][data-level='"+(level+1)+"'][data-pid='"+id+"']").parent().toggle();
+        });
+        
+        
+        
+        
+        
+        
+//        方法二
+//        $("th[class='title']").click(function(){
+//            var level=$(this).data("level");
+//            var alltd=$("th[class='title']");
+//            var index=$("th[class='title']").index($(this));//当前元素对应的下标
+//            for(var i=index+1;i<alltd.length;i++){
+//                var curtd=$(alltd[i]);//当前点击元素的后边的所有元素
+//                var curlevel=$(alltd[i]).data("level");
+//                if(curlevel<=level){
+//                    break;
+//                }
+//                if(curlevel==level+1){
+//                    $(alltd[i]).parent().toggle();
+//                }
+//            }
+//    
+//            });
+        
+        
+        
+        
+        
+    })
+</script> 

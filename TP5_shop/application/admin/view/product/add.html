@@ -1,0 +1,409 @@
+<div class="page-content">
+
+    <!-- BEGIN PAGE CONTAINER-->        
+
+    <div class="container-fluid">
+
+        <!-- BEGIN PAGE HEADER-->
+
+        <div class="row-fluid">
+
+            <div class="span12">
+
+                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+                <h3 class="page-title">
+
+                    产品创建
+
+                </h3>
+
+                <ul class="breadcrumb">
+
+                    <li>
+
+                        <i class="icon-home"></i>
+
+                        <a href="index.html">首页</a> 
+
+                        <i class="icon-angle-right"></i>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">产品创建</a>
+
+
+                    </li>
+
+
+                </ul>
+
+                <!-- END PAGE TITLE & BREADCRUMB-->
+
+            </div>
+
+        </div>
+
+        <!-- END PAGE HEADER-->
+
+        <!-- BEGIN PAGE CONTENT-->
+        <form  action="{:url('admin/product/insert')}" method='post'>
+        <div class="row-fluid">
+
+            <div class="span12">
+
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab_1" data-toggle="tab">
+                            基本信息
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab_2" data-toggle="tab">
+                            扩展信息
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab_3" data-toggle="tab">
+                            描述
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab_4" data-toggle="tab">
+                            相册
+                        </a>
+                    </li>
+                </ul>
+             <form action="{:url('admin/product/insert')}" method='post' id="form_sample_2" class="form-horizontal">
+                <div id="myTabContent" class="tab-content span12">
+                    
+
+                    <div class="tab-pane fade in active " id="tab_1">
+
+                     
+                            <div class="control-group">
+
+                                <label class="control-label">名称</label>
+
+                                <div class="controls">
+
+                                    <input type="text" name="title" data-required="1" class="span6 m-wrap"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">图像</label>
+
+                                <div class="controls" id="big_image">
+                                    <input type="file" name="image" style="display:none;"/>
+                                    <img src="" width="100"/>
+                                    <input type="button" value="上传图片"  class="btn green"/>
+                                    <input type="hidden" name="image_file"/>
+                                    <input type="hidden" name="image_thumb"/>
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">库存</label>
+
+                                <div class="controls">
+
+                                    <input type="text" name="quantity" data-required="1" class="span6 m-wrap"/>
+                                    <Select name="sku_id">
+<!--                                        <option value="0">请选择</option>-->
+                                        <option value="1" >2</option>
+                                        <option value="2" >3</option>
+                                        <option value="3" >4</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <div class="control-group">
+
+                                <label class="control-label">库存状态</label>
+
+                                <div class="controls">
+
+                                    <input type="text" name="stock_status_id" data-required="1" class="span6 m-wrap"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">售价</label>
+
+                                <div class="controls">
+
+                                    <input type="text" name="price" data-required="1" class="span6 m-wrap"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">原价</label>
+
+                                <div class="controls">
+
+                                    <input type="text" name="pricer_origin" data-required="1" class="span6 m-wrap"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">品牌</label>
+
+                                <div class="controls">
+                                    <select name="brand_id">                                      
+                                        {foreach $brand as $k=>$v}
+                                        <option value="{$v.id}">{$v.title}</option>
+                                        {/foreach}
+                                    </select>
+                                  
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label">分类</label>
+
+                                <div class="controls">
+                                    <select name="category_id">                                      
+                                        {foreach $list1 as $k=>$v}
+                                        <option value="{$v.id}">{$v.name}</option>
+                                        {/foreach}
+                                    </select>
+                                   
+
+                                </div>
+
+                            </div>
+                        
+         
+                         
+                         
+                         
+                         
+                         
+                     </div>
+                     <div class="tab-pane fade in" id="tab_2">
+                      <div class="control-group">
+                                <label class="control-label">扣减库存</label>
+                                <div class="controls">
+                                    是<input type="radio" name="is_subtract" data-required="1" class="span6 m-wrap"/>
+                                     否<input type="radio" name="is_subtract" data-required="1" class="span6 m-wrap"/>
+                                </div>
+                      </div>
+                    <div class="control-group">
+                                <label class="control-label">最少起售</label>
+                                <div class="controls">
+                                    <input type="text" name="minimum" data-required="1" class="span6 m-wrap"/>
+                                </div>
+                      </div>
+                     <div class="control-group">
+                                <label class="control-label">配送支持</label>
+                                <div class="controls">
+                                  是  <input type="radio" name="is_shipping" data-required="1" class="span6 m-wrap"/>
+                                    否 <input type="radio" name="is_shipping" data-required="1" class="span6 m-wrap"/>
+                                </div>
+                      </div>
+                         
+                         
+                         
+                         
+                         <div class="control-group">
+                             <label class="control-label">起售时间</label>
+                             <div class="controls">
+                                 <input type="date" name="date_available" data-required="1" class="span6 m-wrap"/>
+                             </div>
+                         </div>
+                         
+                           <div class="control-group">
+                             <label class="control-label">尺寸</label>
+                             <div class="controls">
+                                 <input type="texy" name="length" data-required="1" class="span2 m-wrap" value="0"/>
+                                 <input type="texy" name="width" data-required="1" class="span2 m-wrap" value="0"/>
+                                 <input type="texy" name="heigth" data-required="1" class="span2 m-wrap" value="0"/>
+                                 <Select name="length_unit_id">
+                                     <option value="0">请选择</option>
+
+                                     <option value="1">毫米</option>
+                                     <option value="2">厘米</option>
+                                     <option value="3">米</option>
+                                 </select>
+                             </div>
+                           </div>
+                           <div class="control-group">
+                               <label class="control-label">重量</label>
+                               <div class="controls">
+                                   <input type="text" name="weight" data-required="1" class="span6 m-wrap"/>
+                                   <Select name="sku_id">
+                                       <option name="weight_unit_id" value="0">请选择</option>
+                                       <option value="1">克</option>
+                                       <option value="2">千克</option>
+                                   </select>
+                                   </select>
+                             </div>
+                         </div>
+                         
+                         <div class="control-group">
+                             <label class="control-label">上架</label>
+                             <div class="controls">
+                                  是  <input type="radio" name="is_sale" data-required="1" class="span6 m-wrap"/>
+                                    否 <input type="radio" name="is_sale" data-required="1" class="span6 m-wrap"/>
+                                </div>
+                         </div>
+                         
+                          <div class="control-group">
+                             <label class="control-label">排序</label>
+                             <div class="controls">
+                                 <input type="text" name="sort" data-required="1" class="span6 m-wrap"/>
+                             </div>
+                         </div>
+                         
+                         
+                         
+                         
+
+                     </div>
+                     <div class="tab-pane fade in" id="tab_3">
+                         <script id="productDesc" type="text/plain" style="width:800px;height:400px;" name="description"></script>
+                     </div>
+                     <div class="tab-pane fade in" id="tab_4">
+                         <table id="table"  class="table table-striped table-hover table-bordered">
+                             <tr>
+                                 <td>图片</td>
+                                 <td>描述</td>
+                                 <td>排序</td>
+                                 <td class="add">+</td>
+                             </tr>
+                         </table>
+                     </div>
+                </div>
+                       <div class="form-actions">
+
+                           <button type="submit" class="btn green">提交</button>
+
+                           <button type="button" class="btn">关闭</button>
+                       </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+             </form>
+            </div>
+
+        </div>
+       
+    
+        <!-- END PAGE CONTENT -->
+
+    </div>
+
+    <!-- END PAGE CONTAINER-->
+
+</div>
+<script type="text/javascript">
+    $(function(){
+//        //实例化编辑器
+//    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('productDesc');
+//
+//       $("#big_image input[type='button']").click(function(){
+//           $("#big_image input[type='file']").click();
+//       });
+//       
+//       //ajax上传图片
+//       $("#big_image input[type='file']").change(function(){
+//           //实例化formData表单
+//           var formData = new FormData($("form")[0]);
+//           //formData追加元素
+//           formData.append("file", $("#big_image input[type='file']")[0].files[0]);
+//           $.ajax({
+//              type:"post",
+//              url:"{:url('admin/product/upload')}",
+//              data:formData,
+//              contentType:false,
+//              processData:false,
+//              success:function(data){
+//                  if(data.status){
+//                      $("#big_image input[name='image_file']").val(data.data.file);
+//                      $("#big_image input[name='image_thumb']").val(data.data.thumb);
+//                      $("#big_image img").attr("src", "__STATIC__/upload/"+data.data.file);
+//                  }
+//              }
+//           });
+//       });
+//       
+
+
+
+
+//                                <div class="controls" id="pohto">
+   //                                 <input type="file" name="ipooto_mage" style="display:none;"/>
+     //                               <img src="" width="100"/>
+       //                             <input type="button" value="上传图片"  class="btn green"/>
+               //                           <input type="hidden" name="image_file"/>
+                 //                   <input type="hidden" name="image_thumb"/>
+                   //             </div>
+
+                      
+       $(".add").click(function(){
+           $str = "<tr><td><div class='controls' id='pohto'><input type='file' name='ipooto_mage' style='display:none;'/><img src='' width='100'/><input type='button' value='上传图片'  class='btn green'/><input type='hidden' name='image_file'/><input type='hidden' name='image_thumb'/></div></td><td><input type='text'/></td><td><input type='text'/></td><td class='del'>删除</td></tr>";
+           $("#table").append($str);
+
+       });
+       //监控页面中后添加的元素
+      $('body').on("click",".del",function(){
+          $(this).parent().remove();
+       });
+       
+//       基本信息上传图片
+
+                $("#big_image input[type='button']").click(function(){
+                    $("#big_image input[type='file']").click();
+                });
+                //       //ajax上传图片
+       $("#big_image input[type='file']").change(function(){
+           //实例化formData表单
+           var formData = new FormData($("form")[0]);
+           //formData追加元素
+           formData.append("file", $("#big_image input[type='file']")[0].files[0]);
+           $.ajax({
+              type:"post",
+              url:"{:url('admin/product/upload')}",
+              data:formData,
+              contentType:false,
+              processData:false,
+              success:function(data){
+                  if(data.status){
+                      $("#big_image input[name='image_file']").val(data.data.file);//原图片地址
+                      $("#big_image input[name='image_thumb']").val(data.data.thumb);//缩略图地址
+                      $("#big_image img").attr("src", "__STATIC__/upload/"+data.data.thumb);
+                  }
+              }
+           });
+           
+       });
+       
+       
+        
+       
+//      相册上传图片
+       $("#pohto input[type='button']").click(function(){
+                    $("#pohto input[type='file']").click();
+                });
+       
+
+    });
+</script>
+

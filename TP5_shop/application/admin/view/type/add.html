@@ -1,0 +1,146 @@
+<!-- BEGIN PAGE -->  
+
+		<div class="page-content">
+
+		
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->   
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN STYLE CUSTOMIZER -->
+
+						
+
+						<!-- END BEGIN STYLE CUSTOMIZER -->     
+
+						<h3 class="page-title">
+
+							分类添加
+
+					
+
+						</h3>
+
+											</div>
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN VALIDATION STATES-->
+
+						<div class="portlet box green">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-reorder"></i>分类员添加</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+
+								<!-- BEGIN FORM-->
+
+								
+
+								<form action="{:url('admin/type/add')}" method='post' id="form_sample_2" class="form-horizontal">
+
+							
+                                                                        <div class="control-group">
+
+										<label class="control-label">上级名称</label>
+
+										<div class="controls">
+                                                                                    <select name="pid">
+                                                                                        <option value="0">顶级分类</option>
+                                                                                        {foreach $list as $k=>$v}
+                                                                                        <option value="{$v.id}">{$v.name}</option>
+                                                                                        {/foreach}
+                                                                                    </select>
+											
+
+										</div>
+
+									</div>
+									<div class="control-group">
+
+										<label class="control-label">分类名称</label>
+
+										<div class="controls">
+
+											<input type="text" name="name" data-required="1" class="span6 m-wrap"/>
+
+										</div>
+
+									</div>
+
+									<div class="control-group">
+
+										<label class="control-label">排序<span class="required">*</span></label>
+
+										<div class="controls">
+
+											<input name="sort" type="text" class="span6 m-wrap"/>
+
+										</div>
+
+									</div>
+									<div class="form-actions">
+
+										<button type="submit" class="btn green">提交</button>
+
+										<button type="button" class="btn">Cancel</button>
+
+									</div>
+
+								</form>
+
+								<!-- END FORM-->
+
+							</div>
+
+						</div>
+
+						<!-- END VALIDATION STATES-->
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE CONTENT-->         
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+	
+
+	<!-- END PAGE -->  
+
+	
