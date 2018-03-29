@@ -1,0 +1,123 @@
+   {extend name="common/layout"/}
+{block name="title"}网站首页{/block}
+{block name="content"}   
+  <script src="__STATIC__/index/js/jquery.validate.min.js"></script>
+  <script src="__STATIC__/index/js/additional-methods.min.js"></script>
+  <script src="__STATIC__/index/js/messages_zh.js"></script>
+  <div class="container">
+        <ul class="breadcrumb">
+          <li>
+            <a href="http://www.52minq.com/register.html">
+              <i class="fa fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.52minq.com/register.html">我的账户</a>
+          </li>
+          <li>
+            <a href="http://www.52minq.com/register.html">用户注册</a>
+          </li>
+        </ul>
+        <div class="row">
+          <div id="content" class="col-sm-9">
+            <h1>用户注册</h1>
+            <p>
+              欢迎来到我们网站，如果您是新用户，请填写下面的表单进行注册。如果您已经是本站的会员，请您直接
+              <a href="http://www.52minq.com/login.html">登录</a>
+              。
+            </p>
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="http://www.52minq.com/register.html#tab-email-register" data-toggle="tab">E-Mail 注册</a>
+              </li>
+              
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab-email-register">
+                
+                  
+                  <form action="{:url('index/login/check')}" method="post" enctype="multipart/form-data" class="form-horizontal register_form">
+  
+                  <input type="hidden" name="register_type" value="email">
+
+                  <fieldset id="account">
+
+                    <div class="form-group required form_control success">
+                      <label class="col-sm-2 control-label" for="input-email">电子邮箱</label>
+                      <div class="col-sm-10 required form_control success">
+                        <input type="email" name="email" value="" placeholder="电子邮箱" id="input-email" class="form-control" required="" data-error="email不能为空||邮箱格式不正确" data-valid="isNonEmpty||isEmail" data-tip="请输入您的邮箱" data-status="1">
+
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-name">您的姓名</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="name" value="" placeholder="您的姓名" id="input-name" class="form-control" required="" data-error="email不能为空||邮箱格式不正确" data-valid="isNonEmpty||isEmail" data-tip="请输入您的邮箱" data-status="1">
+                      </div>
+                    </div>
+
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-password">输入密码</label>
+                      <div class="col-sm-10">
+                        <input type="password" name="pwd" value="" placeholder="输入密码" id="input-password" class="form-control" required="" data-error="email不能为空||邮箱格式不正确" data-valid="isNonEmpty||isEmail" data-tip="请输入您的邮箱" data-status="1">
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-confirm">确认密码</label>
+                      <div class="col-sm-10">
+                        <input type="password" name="pwd1" value="" placeholder="确认密码" id="input-confirm" class="form-control" required="" data-error="email不能为空||邮箱格式不正确" data-valid="isNonEmpty||isEmail" data-tip="请输入您的邮箱" data-status="1">
+                      </div>
+                    </div>
+
+                  </fieldset>
+                  <div class="buttons">
+                    <div class="pull-right">
+                      我已经阅读并同意
+                      <a href="http://www.52minq.com/register.html" class="agree"> <b>隐私政策</b>
+                      </a>
+                      <input type="checkbox" name="agree" value="1" id="agree" class="input-agree" checked="">
+                      &nbsp;
+
+                      <input type="submit" value="继续" class="btn btn-primary btn-submit" id="go-on">
+                    </div>
+                  </div>
+                </form>
+              </div>
+          
+            </div>
+          </div>
+          <aside id="column-right" class="col-sm-3 hidden-xs">
+            <div class="list-group sidebar-list-group">
+              <a href="http://www.52minq.com/register.html" class="list-group-item">会员登录</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">会员注册</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">忘记密码</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">我的账户</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">收货地址</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">收藏列表</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">历史订单</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">下载文件</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item hidden">分期付款</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">奖励积分</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">商品退换</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">我的余额</a>
+              <a href="http://www.52minq.com/register.html" class="list-group-item">订阅咨询</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <script type="text/javascript">
+
+  $('.input-agree').click(function (){
+      if(this.checked == false){
+          $('.btn-submit').attr('disabled',true);
+      }else{
+          $('.btn-submit').removeAttr('disabled');
+      }
+
+  });
+
+
+
+  
+</script>
+{/block}

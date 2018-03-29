@@ -22,5 +22,11 @@ class Index extends Controller
 
        return $this->redirect('details',$ProductModel);   
     }
+//    public function register(){
+////        dump(send_mail("1205177965@qq.com","刘赫","标题","主体"));
+////       exit();
+//        return $this->fetch();
+//        
+//    }
 
 }

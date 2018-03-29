@@ -8,5 +8,16 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+
 use think\Route;
+
+
+//接口
 Route::get("menu/:isLevel","api/Menu/menulist"); 
+
+//Route::get("productlist/:type/:num","api/Product/prouuntlist");
+
+
+
+//前台页面
+Route::any("html/register","index/index/register");
