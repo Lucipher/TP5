@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>安装程序</title>
+<link rel="stylesheet" href="../public/layui/css/layui.css">
+<link rel="stylesheet" href="../public/css/install.css">
+<script type="text/javascript" src="../public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../public/layui/layui.js"></script>
+<script>
+function detectionClick(){
+    if($('.yes').length!=6){
+        alert('您的配置或权限不符合要求');
+    }else{
+        location.href='./index.php?c=create';
+    }
+}
+</script>
+</head>
+<body>
+<div class="header">
+      <div class="inwp">  
+		<h2><a href="../install/index.php"><img src="../public/img/install-logo.png" alt="SNGO.ORG"></a></h2>
+        <ul>
+            <li class="innumber">1</li>
+            <li class="inword">使用协议</li>
+        </ul>
+        <ul>
+            <li class="innumber innumber-this">2</li>
+            <li class="inword">环境检测</li>
+        </ul>
+        <ul>
+            <li class="innumber">3</li>
+            <li class="inword">创建数据</li>
+        </ul>
+        <ul>
+            <li class="innumber">4</li>
+            <li class="inword">安装完成</li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+   <div class="inwp">
+            <h2>环境检测：</h2>
+            <table width="100%">
+                <tr>
+                    <th width="25%">坏境</th>
+                    <th width="25%">最低配置</th>
+                    <th width="25%">当前配置</th>
+                    <th width="25%">是否符合</th>
+                </tr>
+                <tr>
+                    <td>操作系统</td>
+                    <td>不限</td>
+                    <td><?php echo php_uname('s'); ?></td>
+                    <td class="yes">√</td>
+                </tr>
+                <tr>
+                    <td>php版本</td>
+                    <td>&gt;5.4</td>
+                    <td><?php echo PHP_VERSION ?></td>
+                    <?php $php_version=explode('.', PHP_VERSION); ?>
+                    <td class="<?php if(($php_version['0']>=7) || ($php_version['0']>=5 && $php_version['1']>=3))echo 'yes'; ?>">
+                        <?php if (($php_version['0']>=7) || ($php_version['0']>=5 && $php_version['1']>=4)): ?>
+                            √
+                        <?php else: ?>
+                            ×
+                        <?php endif ?>
+                    </td>
+                </tr>
+            </table>
+            <h2>目录权限：</h2>
+            <table width="100%">
+                <tr>
+                    <th width="25%">坏境</th>
+                    <th width="25%">最低配置</th>
+                    <th width="25%">当前配置</th>
+                    <th width="25%">是否符合</th>
+                </tr>
+                <tr>
+                    <td>./Upload</td>
+                    <td>可写</td>
+                    <td>
+                        <?php if (is_writable('../upload')): ?>
+                            可写
+                        <?php else: ?>
+                            不可写
+                        <?php endif ?>
+                    </td>
+                    <td class="<?php if(is_writable('../upload'))echo 'yes'; ?>">
+                        <?php if (is_writable('../upload')): ?>
+                            √
+                        <?php else: ?>
+                            ×
+                        <?php endif ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>./Runtime</td>
+                    <td>可写</td>
+                    <td>
+                        <?php if (is_writable('../runtime')): ?>
+                            可写
+                        <?php else: ?>
+                            不可写
+                        <?php endif ?>
+                    </td>
+                    <td class="<?php if(is_writable('../runtime'))echo 'yes'; ?>">
+                        <?php if (is_writable('../runtime')): ?>
+                            √
+                        <?php else: ?>
+                            ×
+                        <?php endif ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>./install</td>
+                    <td>可写</td>
+                    <td>
+                        <?php if (is_writable('../install')): ?>
+                            可写
+                        <?php else: ?>
+                            不可写
+                        <?php endif ?>
+                    </td>
+                    <td class="<?php if(is_writable('../install'))echo 'yes'; ?>">
+                        <?php if (is_writable('../install')): ?>
+                            √
+                        <?php else: ?>
+                            ×
+                        <?php endif ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>./application</td>
+                    <td>可写</td>
+                    <td>
+                        <?php if (is_writable('../application')): ?>
+                            可写
+                        <?php else: ?>
+                            不可写
+                        <?php endif ?>
+                    </td>
+                    <td class="<?php if(is_writable('../application'))echo 'yes'; ?>">
+                        <?php if (is_writable('../application')): ?>
+                            √
+                        <?php else: ?>
+                            ×
+                        <?php endif ?>
+                    </td>
+                </tr>
+            </table>
+			<div class="inout-danger">
+			<a href="./index.php?c=agreement">上一步</a>
+		    </div>
+		    <div class="inout">
+			<a href="javascript:;" onclick="detectionClick()">下一步</a>
+		    </div>
+   </div>
+</div>
+<div class="footer" style="display: none;">
+  <p>© 2010-2018 影子淘客（321KEJI.CN）</p>
+</div>
+</body>
+</html>

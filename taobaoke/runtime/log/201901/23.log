@@ -1,0 +1,246 @@
+---------------------------------------------------------------
+[ 2019-01-23T14:30:49+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [8]未定义数组索引: user
+---------------------------------------------------------------
+[ 2019-01-23T14:31:19+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login??user=15127786126&pwd=lh3177
+[ error ] [8]未定义数组索引: user
+---------------------------------------------------------------
+[ 2019-01-23T14:31:30+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist
+---------------------------------------------------------------
+[ 2019-01-23T14:31:57+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [8]未定义变量: uid
+---------------------------------------------------------------
+[ 2019-01-23T14:32:12+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist
+---------------------------------------------------------------
+[ 2019-01-23T14:32:21+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist
+---------------------------------------------------------------
+[ 2019-01-23T14:32:29+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist
+---------------------------------------------------------------
+[ 2019-01-23T14:32:52+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist
+---------------------------------------------------------------
+[ 2019-01-23T14:34:55+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [8]未定义变量: where
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T14:37:40+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [8]未定义变量: where
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T14:38:21+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [2]Missing argument 1 for app\api\model\User::ceshi(), called in F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php on line 32 and defined
+---------------------------------------------------------------
+[ 2019-01-23T14:38:22+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [2]Missing argument 1 for app\api\model\User::ceshi(), called in F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php on line 32 and defined
+---------------------------------------------------------------
+[ 2019-01-23T14:38:23+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [2]Missing argument 1 for app\api\model\User::ceshi(), called in F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php on line 32 and defined
+---------------------------------------------------------------
+[ 2019-01-23T14:40:03+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T14:40:06+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T14:40:26+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T14:40:39+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:41:07+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [8]未定义数组索引: user
+---------------------------------------------------------------
+[ 2019-01-23T17:41:57+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:43:27+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:43:35+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:43:40+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [8]未定义变量: uid
+---------------------------------------------------------------
+[ 2019-01-23T17:43:52+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:44:07+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:45:30+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15127786126&pwd=lh3177
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:45:47+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:47:15+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:47:16+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:47:17+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:47:17+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:48:03+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:48:08+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:48:17+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:48:18+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:48:18+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [64]Cannot declare class app\api\controller\Login because the name is already in use
+---------------------------------------------------------------
+[ 2019-01-23T17:49:06+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [8]未定义数组索引: user
+---------------------------------------------------------------
+[ 2019-01-23T17:49:15+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:52:23+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:52:26+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T17:55:55+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T17:56:58+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T17:56:59+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T17:57:17+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T17:57:18+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T18:04:05+08:00 ] ::1 ::1 GET /taobaoke/admin.php/ceshi/ceshi
+[ error ] [1]Class 'app\api\controller\Common' not found
+---------------------------------------------------------------
+[ 2019-01-23T18:04:24+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2019-01-23T18:09:08+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：1.144378s][吞吐率：0.87req/s] [内存消耗：2,804.59kb] [文件加载：57]
+[ error ] [0]variable type error： array[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\Response.php:318]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:10+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.069794s][吞吐率：14.33req/s] [内存消耗：1,809.29kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:45+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.081092s][吞吐率：12.33req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:46+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.067841s][吞吐率：14.74req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:46+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.066554s][吞吐率：15.03req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:46+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.066649s][吞吐率：15.00req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:46+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.065138s][吞吐率：15.35req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:47+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.072213s][吞吐率：13.85req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:14:47+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.076532s][吞吐率：13.07req/s] [内存消耗：1,808.16kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:15:42+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.069317s][吞吐率：14.43req/s] [内存消耗：1,808.57kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:16]
+---------------------------------------------------------------
+[ 2019-01-23T18:17:02+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login
+[ info ] localhost/taobaoke/admin.php/login/login [运行时间：0.066212s][吞吐率：15.10req/s] [内存消耗：1,808.58kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:15]
+---------------------------------------------------------------
+[ 2019-01-23T18:22:37+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/register?user=15530705111&pwd=lh3177
+[ info ] localhost/taobaoke/admin.php/login/register?user=15530705111&pwd=lh3177 [运行时间：0.073160s][吞吐率：13.67req/s] [内存消耗：1,815.00kb] [文件加载：51]
+[ error ] [1]Class 'app\api\controller\User' not found[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:61]
+---------------------------------------------------------------
+[ 2019-01-23T18:24:08+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177
+[ info ] localhost/taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177 [运行时间：1.176377s][吞吐率：0.85req/s] [内存消耗：2,842.63kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_user' doesn't exist[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2019-01-23T18:24:28+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177
+[ info ] localhost/taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177 [运行时间：1.171779s][吞吐率：0.85req/s] [内存消耗：2,833.55kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_vae_home_user' doesn't exist[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2019-01-23T18:24:44+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177
+[ info ] localhost/taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177 [运行时间：1.157258s][吞吐率：0.86req/s] [内存消耗：2,843.03kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_vae_home_user' doesn't exist[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2019-01-23T18:24:48+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177
+[ info ] localhost/taobaoke/admin.php/login/login?user=15530705111&pwd=lh3177 [运行时间：1.127607s][吞吐率：0.89req/s] [内存消耗：2,843.03kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_vae_home_user' doesn't exist[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2019-01-23T18:38:32+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/modify?pwd=lh3177&pwd_xin=3177lh&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/login/modify?pwd=lh3177&pwd_xin=3177lh&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.149165s][吞吐率：0.87req/s] [内存消耗：2,961.02kb] [文件加载：61]
+[ error ] [8]未定义变量: token[F:\phpStudy\WWW\taobaoke\application\api\model\User.php:116]
+---------------------------------------------------------------
+[ 2019-01-23T18:38:38+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/modify?pwd=lh3177&pwd_xin=3177lh&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/login/modify?pwd=lh3177&pwd_xin=3177lh&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.162364s][吞吐率：0.86req/s] [内存消耗：2,881.23kb] [文件加载：58]
+[ error ] [8]未定义变量: token[F:\phpStudy\WWW\taobaoke\application\api\model\User.php:116]
+---------------------------------------------------------------
+[ 2019-01-23T18:38:51+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/modify?pwd=3177lh&pwd_xin=lh3177&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/login/modify?pwd=3177lh&pwd_xin=lh3177&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.138850s][吞吐率：0.88req/s] [内存消耗：2,961.02kb] [文件加载：61]
+[ error ] [8]未定义变量: token[F:\phpStudy\WWW\taobaoke\application\api\model\User.php:116]
+---------------------------------------------------------------
+[ 2019-01-23T18:46:09+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/modify?pwd=3177lh&pwd_xin=lh3177&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/login/modify?pwd=3177lh&pwd_xin=lh3177&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.151100s][吞吐率：0.87req/s] [内存消耗：2,881.23kb] [文件加载：58]
+[ error ] [8]未定义变量: token[F:\phpStudy\WWW\taobaoke\application\api\model\User.php:116]
+---------------------------------------------------------------
+[ 2019-01-23T18:57:43+08:00 ] ::1 ::1 GET /taobaoke/admin.php/login/reset
+[ info ] localhost/taobaoke/admin.php/login/reset [运行时间：0.079633s][吞吐率：12.56req/s] [内存消耗：1,806.88kb] [文件加载：50]
+[ error ] [8]未定义数组索引: user[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:109]
+[ error ] [8]未定义数组索引: code[F:\phpStudy\WWW\taobaoke\application\api\controller\Login.php:110]
+---------------------------------------------------------------
+[ 2019-01-23T19:07:24+08:00 ] ::1 ::1 GET /taobaoke/admin.php/card/write?number=201901200412&pwd=106976
+[ info ] localhost/taobaoke/admin.php/card/write?number=201901200412&pwd=106976 [运行时间：0.087137s][吞吐率：11.48req/s] [内存消耗：2,784.16kb] [文件加载：59]
+[ error ] [8]未定义数组索引: token[F:\phpStudy\WWW\taobaoke\application\api\controller\Card.php:14]
+[ error ] [0]method not exist:think\db\Query->gg_token[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2019-01-23T19:08:34+08:00 ] ::1 ::1 GET /taobaoke/admin.php/card/write?number=201901200412&pwd=106976
+[ info ] localhost/taobaoke/admin.php/card/write?number=201901200412&pwd=106976 [运行时间：1.139982s][吞吐率：0.88req/s] [内存消耗：2,853.73kb] [文件加载：58]
+[ error ] [8]未定义数组索引: token[F:\phpStudy\WWW\taobaoke\application\api\controller\Card.php:14]
+---------------------------------------------------------------
+[ 2019-01-23T19:08:50+08:00 ] ::1 ::1 GET /taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.133425s][吞吐率：0.88req/s] [内存消耗：2,841.20kb] [文件加载：58]
+[ error ] [0]method not exist:think\db\Query->write[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Query.php:93]
+---------------------------------------------------------------
+[ 2019-01-23T19:09:16+08:00 ] ::1 ::1 GET /taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.209186s][吞吐率：0.83req/s] [内存消耗：2,907.00kb] [文件加载：61]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taobaoke.tpt_home_shopping' doesn't exist[F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2019-01-23T19:09:46+08:00 ] ::1 ::1 GET /taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5
+[ info ] localhost/taobaoke/admin.php/card/write?number=201901200412&pwd=106976&token=cd98d83621538dfb733bcce96c3c99bf814787a5 [运行时间：1.166613s][吞吐率：0.86req/s] [内存消耗：2,976.33kb] [文件加载：62]
+[ error ] [0]数据表字段不存在:[balance][F:\phpStudy\WWW\taobaoke\thinkphp\library\think\db\Builder.php:107]

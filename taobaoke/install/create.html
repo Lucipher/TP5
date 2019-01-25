@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>安装程序</title>
+<link rel="stylesheet" href="../public/layui/css/layui.css">
+<link rel="stylesheet" href="../public/css/install.css">
+<script type="text/javascript" src="../public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../public/layui/layui.js"></script>
+</head>
+<body>
+<div class="header">
+      <div class="inwp">  
+		<h2><a href="../install/index.php"><img src="../public/img/install-logo.png" alt="SNGO.ORG"></a></h2>
+        <ul>
+            <li class="innumber">1</li>
+            <li class="inword">使用协议</li>
+        </ul>
+        <ul>
+            <li class="innumber">2</li>
+            <li class="inword">环境检测</li>
+        </ul>
+        <ul>
+            <li class="innumber innumber-this">3</li>
+            <li class="inword">创建数据</li>
+        </ul>
+        <ul>
+            <li class="innumber">4</li>
+            <li class="inword">安装完成</li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+	<div class="inwp">
+		<form class="layui-form layui-form-pane" action="./index.php?c=success" method="post">
+			<h2>创建数据库：</h2>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库类型</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_TYPE" value="mysql" disabled="disabled" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库服务器</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_HOST" value="localhost" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库端口</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_PORT" value="3306" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库名</label>
+				<div class="layui-input-block">
+					<input type="text" type="text" name="DB_NAME" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库用户名</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_USER" value="root" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库密码</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_PWD" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">数据库前缀</label>
+				<div class="layui-input-block">
+					<input type="text" name="DB_PREFIX" value="tpt_" required lay-verify="required" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="inout-danger">
+				<a href="./index.php?c=detection">上一步</a>
+			</div>
+			<div class="inout">
+				<input type="submit" lay-submit lay-filter="formDemo" value="确认安装">
+			</div>
+		</form>
+	</div>
+</div>
+<div class="footer" style="display: none;">
+  <p>© 2010-2018 影子淘客（321KEJI.CN）</p>
+</div>
+<script>
+layui.use('form', function(){
+  var form = layui.form();
+});
+</script>
+</body>
+</html>

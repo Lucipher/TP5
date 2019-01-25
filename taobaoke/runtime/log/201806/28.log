@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+[ 2018-06-28T09:51:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/robotxuanpin/index.html
+[ error ] [8]curl_setopt_array(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead
+---------------------------------------------------------------
+[ 2018-06-28T09:53:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin.php/robotgaoyongjin/collect_all.html
+[ error ] [8]curl_setopt_array(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead
+---------------------------------------------------------------
+[ 2018-06-28T09:53:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/robotxuanpin/index.html
+[ error ] [8]curl_setopt_array(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead
+---------------------------------------------------------------
+[ 2018-06-28T09:53:45+08:00 ] 127.0.0.1 127.0.0.1 POST /admin.php/robotxuanpin/collect_all.html
+[ error ] [8]curl_setopt_array(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead
+---------------------------------------------------------------
+[ 2018-06-28T09:53:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/robotxuanpin/index.html
+[ error ] [8]curl_setopt_array(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead
